@@ -378,30 +378,51 @@ iface eth0 inet static
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.216.0.0/14
 
 KANAN
+
 route add -net 192.218.1.0 netmask 255.255.255.252 gw 192.218.1.2
+
 route add -net 192.218.0.0 netmask 255.255.255.0 gw 192.218.1.2
 
 KIRI
+
 route add -net 192.219.128.0 netmask 255.255.255.252 gw 192.219.128.2
+
 route add -net 192.219.64.0 netmask 255.255.255.224 gw 192.219.128.2
+
 route add -net 192.219.32.0 netmask 255.255.255.252 gw 192.219.128.2
+
 route add -net 192.219.8.0 netmask 255.255.255.252 gw 192.219.128.2
+
 route add -net 192.219.0.0 netmask 255.255.248.0 gw 192.219.128.2
+
 route add -net 192.219.16.0 netmask 255.255.252.0 gw 192.219.128.2
+
 route add -net 192.219.20.8 netmask 255.255.255.252 gw 192.219.128.2
+
 route add -net 192.219.20.0 netmask 255.255.255.248 gw 192.219.128.2
 
 BAWAH
+
 route add -net 192.217.0.0 netmask 255.255.255.252 gw 192.217.0.2
+
 route add -net 192.216.128.0 netmask 255.255.255.248 gw 192.217.0.2
+
 route add -net 192.216.32.0 netmask 255.255.255.252 gw 192.217.0.2
+
 route add -net 192.216.8.0 netmask 255.255.254.0 gw 192.217.0.2
+
 route add -net 192.216.4.0 netmask 255.255.255.252 gw 192.217.0.2
+
 route add -net 192.216.0.0 netmask 255.255.252.0 gw 192.217.0.2
+
 route add -net 192.216.16.0 netmask 255.255.252.0 gw 192.217.0.2
+
 route add -net 192.216.72.0 netmask 255.255.255.252 gw 192.217.0.2
+
 route add -net 192.216.64.0 netmask 255.255.255.0 gw 192.217.0.2
+
 route add -net 192.216.68.0 netmask 255.255.252.0 gw 192.217.0.2
+
 route add -net 192.216.128.8 netmask 255.255.255.252 gw 192.217.0.2
 
 - FRIEREN:
@@ -411,16 +432,22 @@ route add -net 192.219.64.0 netmask 255.255.255.224 gw 192.219.64.2
 
 KIRI
 route add -net 192.219.32.0 netmask 255.255.255.252 gw 192.219.32.1
+
 route add -net 192.219.8.0 netmask 255.255.255.252 gw 192.219.32.1
+
 route add -net 192.219.0.0 netmask 255.255.248.0 gw 192.219.32.1
+
 route add -net 192.219.16.0 netmask 255.255.252.0 gw 192.219.32.1
+
 route add -net 192.219.20.8 netmask 255.255.255.252 gw 192.219.32.1
+
 route add -net 192.219.20.0 netmask 255.255.255.248 gw 192.219.32.1
 
 - FLAMME:
 
 ATAS
 route add -net 192.219.8.0 netmask 255.255.255.252 gw 192.219.8.2
+
 route add -net 192.219.0.0 netmask 255.255.248.0 gw 192.219.8.2
 
 KIRI
@@ -428,6 +455,7 @@ route add -net 192.219.16.0 netmask 255.255.252.0 gw 192.219.20.9
 
 BAWAH
 route add -net 192.219.20.8 netmask 255.255.255.252 gw 192.219.20.10
+
 route add -net 192.219.20.0 netmask 255.255.255.248 gw 192.219.20.10
 
 - FERN:
@@ -441,41 +469,57 @@ route add -net 192.219.20.0 netmask 255.255.255.248 gw 192.219.20.1
 - EISEN:
 
 KIRI
+
 route add -net 192.216.128.0 netmask 255.255.255.248 gw 10.47.0.49
 
 BAWAH
+
 route add -net 192.216.32.0 netmask 255.255.255.252 gw 192.216.128.1
+
 route add -net 192.216.8.0 netmask 255.255.254.0 gw 192.216.128.1
+
 route add -net 192.216.4.0 netmask 255.255.255.252 gw 192.216.128.1
+
 route add -net 192.216.0.0 netmask 255.255.252.0 gw 192.216.128.1
+
 route add -net 192.216.16.0 netmask 255.255.252.0 gw 192.216.128.1
 
 KANAN
+
 route add -net 192.216.72.0 netmask 255.255.255.252 gw 192.216.32.1
+
 route add -net 192.216.64.0 netmask 255.255.255.0 gw 192.216.32.1
+
 route add -net 192.216.68.0 netmask 255.255.252.0 gw 192.216.32.1
 
 KANAN-ATAS
+
 route add -net 192.216.128.8 netmask 255.255.255.252 gw 192.216.72.1
 
 - LUGNER:
 
 route add -net 192.216.64.0 netmask 255.255.255.0 gw 192.216.68.1
+
 route add -net 192.216.68.0 netmask 255.255.252.0 gw 192.216.64.1
 
 - LINIE:
 
 BAWAH 
+
 route add -net 192.216.16.0 netmask 255.255.254.0 gw 192.216.16.1
 
 KIRI
+
 route add -net 192.216.8.0 netmask 255.255.254.0 gw 192.216.8.1
+
 route add -net 192.216.4.0 netmask 255.255.255.252 gw 192.216.8.1
+
 route add -net 192.216.0.0 netmask 255.255.252.0 gw 192.216.8.1
 
 - LAWINE:
 
 route add -net 192.216.4.0 netmask 255.255.255.252 gw 192.216.4.1
+
 route add -net 192.216.0.0 netmask 255.255.252.0 gw 192.216.4.1
 
 - HEITER:
